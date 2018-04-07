@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Acerca de</string>
+    <string name="nombre">Ricardo López</string>
+    <string name="carrera">Ingeniería Informática</string>
+    <string name="telefono">+(503)7461-9432</string>
+    <string name="email">00024614@uca.edu.sv</string>
+    <string name="instagram">ricardo_avion</string>
+    <string name="github">ricardoavion</string>
+    <string name="share_text">Compartir</string>
+    <string name="firma">Powered by: Ricardo(Avión)</string>
 </resources>

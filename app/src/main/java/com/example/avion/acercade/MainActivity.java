@@ -13,6 +13,10 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     Button share;
+    String nombre = "Ricardo López";
+    String correo = "00024614@uca.edu.sv";
+    String numero = "+(503)7461-9432";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                String titulo = nombre;
+                String subtitulo1 = numero;
+                String subtitulo2 = correo;
+                intent.putExtra(Intent.EXTRA_TEXT, nombre + '\n' + "Teléfono "+subtitulo1+ '\n' + "Email: "+subtitulo2);
+                startActivity(Intent.createChooser(intent, "Compartir en:"));
 
             }
 
